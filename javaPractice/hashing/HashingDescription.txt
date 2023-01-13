@@ -1,0 +1,10 @@
+FUNCTION of a Hash Table
+    - Key values are assigned to elements in a Hash Table using a Hash Function
+    - A Hash Funtion helps calculate the best index an  item should go in
+        - Index must be small enough for the array size
+        - Don't overwrite other data in the Hash Table
+Hash Functions
+    - A Hash Functions job is to store in an array with a limited size
+    - It does it in a way that the array doesnt need to be searched through to find it 
+       - Enter values in any order
+       - Be able to find them using a calculation instead of searching through the array
