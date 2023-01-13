@@ -1,4 +1,4 @@
-package mergeSort_quickSort.megeSort;
+package mergerSort_quickSort.mergeSort;
 
 import java.util.ArrayList;
 import java.util.List;
