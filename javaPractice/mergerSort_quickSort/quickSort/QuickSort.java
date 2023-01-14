@@ -5,10 +5,10 @@ import java.util.Random;
 public class QuickSort {
     public static void main(String[] args) {
         Random rand = new Random();
-        int[] numbers = new int[10];
+        int[] numbers = new int[100];
 
         for (int i = 0; i < numbers.length; i++){
-            numbers[i] = rand.nextInt(10);
+            numbers[i] = rand.nextInt(1000000);
         }
 
         System.out.println("Before:");
@@ -27,15 +27,17 @@ public class QuickSort {
     }
 
     public static void quickSort(int[] array, int lowIndex, int  highIndex){
-        if(lowIndex >= highIndex){
+        if (lowIndex >= highIndex) {
             return;
         }
-        int pivotIndex = new Random().nextInt(highIndex-lowIndex)+ lowIndex;
+
+        int pivotIndex = new Random().nextInt(highIndex - lowIndex) + lowIndex;
         int pivot = array[pivotIndex];
         swap(array, pivotIndex, highIndex);
+
         int leftPointer = partition(array, lowIndex, highIndex, pivot);
 
-        quickSort(array,lowIndex, leftPointer -1);
+        quickSort(array, lowIndex, leftPointer - 1);
         quickSort(array, leftPointer + 1, highIndex);
     }
 
