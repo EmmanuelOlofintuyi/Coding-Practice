@@ -7,7 +7,8 @@ public class Cat implements Printable{
     public Cat(){}
 
     @Override
-    public void print(String s) {
+    public String print(String s) {
         System.out.println("Meow");
+        return "";
     }
 }
