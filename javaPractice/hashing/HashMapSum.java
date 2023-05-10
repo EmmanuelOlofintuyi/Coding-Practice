@@ -8,6 +8,7 @@ public class HashMapSum {
 
     public static HashMap<String, Integer> arraySums = new HashMap<>();
     public static TreeMap<String, Integer> tArraySums = new TreeMap<>();
+
     public static void main(String args[]){
         int[] arrayExample = new int[] {5, 86, -2, 55, 3};
         int t = 3;

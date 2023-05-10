@@ -1,4 +1,4 @@
-package dynamicProgrammingProblems;
+package dynamicProgrammingProblems.diagonalDifferenceProblem;
 
 import java.util.ArrayList;
 import java.util.List;
